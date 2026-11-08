@@ -1,11 +1,10 @@
 import './Hero.css'
-import fundo from '../../assets/img/fundo.webp'
 
 export default function Hero(){
     return(
     <section className='hero'> {/* Faixa horizontal inteira*/}
 
-        <div className='hero-container'> {/* Segura conteúdo numa largura máxima e centraliza. Responsável por colocar os dois lado a lado, em duas colunas.*/}
+        <div className='hero-container'> {/* Segura conteúdo numa largura máxima e centraliza.*/}
 
             <div className='hero-conteudo'> {/* A coluna da esquerda. Empilha subtítulo, título, parágrafo e botões de cima pra baixo, com espaçamento igual entre eles.*/}
 
@@ -19,8 +18,6 @@ export default function Hero(){
                     <a href='#id-da-secao2' className="botao-secundario">Melhores episódios</a>
                 </div>
             </div>
-
-            <img className='hero-imagem' src={fundo} alt="Série The Office"/>
         </div>
     </section>
     )
