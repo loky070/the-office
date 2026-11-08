@@ -1,0 +1,82 @@
+.hero {
+  border-bottom: 1px solid var(--borda);
+  background-image: linear-gradient(to right, rgba(27, 36, 51, 0.92), rgba(27, 36, 51, 0.45)), url('../../assets/img/hero-elenco.webp');
+  background-size: cover;
+background-position: center top;
+  color: var(--papel);
+}
+
+.hero-container {
+  max-width: 1160px;
+  margin: 0 auto; /*Centraliza o container */
+  padding: 96px 24px 88px; /*96 em cima, 24 nas laterais, 88 embaixo*/
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+}
+
+.hero-conteudo {
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-subtitulo {
+    margin: 0;
+    font-family: var(--fonte-rotulo);
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    color: var(--mostarda-claro);
+}
+
+.hero-titulo {
+  margin: 0;
+  font-family: var(--fonte-titulo);
+  font-weight: 400;
+  font-size: clamp(40px, 6vw, 68px);
+  line-height: 1.1;
+}
+
+.hero-texto {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.55;
+  max-width: 540px;
+  opacity: 0.88;
+}
+
+.botao-primario, .botao-secundario {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.botao-primario {
+  background: var(--mostarda);
+  color: var(--tinta);
+}
+
+.botao-secundario {
+  background: transparent;
+  color: var(--mostarda);
+  border: 1.5px solid var(--papel);
+}
+
+.botao-primario:hover {
+  background: var(--mostarda-claro);
+}
+
+.botao-secundario:hover {
+  background: rgba(246, 244, 238, 0.15);
+  color: var(--mostarda-claro);
+}

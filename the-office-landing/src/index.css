@@ -7,10 +7,19 @@
   --cinza: #4F5868;          /* textos secundários */
   --borda: #D9D4C7;          /* linhas e bordas */
   --placeholder: #E7E2D5;    /* caixas de imagem vazias */
+
+  --fonte-titulo: 'Cutive', Georgia, serif;
+  --fonte-rotulo: 'Courier Prime', 'Courier New', monospace;
+  --fonte-texto: 'IBM Plex Sans', system-ui, sans-serif;
 }
 
 body {
   margin: 0;                 /* tira a margem padrão do navegador */
   background: var(--papel);  /* usa a variável de fundo */
   color: var(--tinta);       /* usa a variável de texto */
+  font-family: var(--fonte-texto); /* usa a variável de fonte */
+}
+
+* {
+  box-sizing: border-box; /* Width passa a valer a caixa toda, o padding é descontado por dentro, não somado por fora. Sem isso, 300px de largura + 24px de padding viram 348px na tela.*/
 }
