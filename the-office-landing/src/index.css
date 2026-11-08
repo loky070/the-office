@@ -1,0 +1,16 @@
+:root {
+  --papel: #F6F4EE;          /* fundo da página */
+  --tinta: #1B2433;          /* texto principal, navbar, seção de cenas */
+  --mostarda: #C8902E;       /* fundo de botões */
+  --mostarda-texto: #8A5A10; /* textos pequenos em mostarda sobre fundo claro */
+  --mostarda-claro: #E3C27D; /* detalhes em mostarda sobre fundo escuro */
+  --cinza: #4F5868;          /* textos secundários */
+  --borda: #D9D4C7;          /* linhas e bordas */
+  --placeholder: #E7E2D5;    /* caixas de imagem vazias */
+}
+
+body {
+  margin: 0;                 /* tira a margem padrão do navegador */
+  background: var(--papel);  /* usa a variável de fundo */
+  color: var(--tinta);       /* usa a variável de texto */
+}
