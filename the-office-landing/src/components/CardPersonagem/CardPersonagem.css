@@ -1,0 +1,76 @@
+/* O card inteiro (a caixa de fora) */
+.card-personagem{
+    flex: 1 1 240px;
+    /*
+    1- flex-grow: 1 (cresce para ocupar o espaço disponível)
+    2- flex-shrink: 1 (encolhe se necessário)
+    3- flex-basis: 240px (tamanho inicial do item)*/
+    background: var(--papel);       /* cor de fundo: o bege, para destacar do branco da seção */
+    border: 1px solid var(--borda); /* linha em volta: espessura, tipo (contínua) e cor */
+    border-radius: 6px;             /* arredonda os cantos */
+    display: flex;                  /* liga o modo flex: os filhos (foto e corpo) passam a ser organizados por ele */
+    flex-direction: column;         /* organiza os filhos em coluna: foto em cima, corpo embaixo */
+    overflow: hidden;               /* esconde o que passar da borda: a foto não "vaza" nos cantos arredondados */
+}
+
+/* A foto do personagem */
+.card-personagem-foto{
+    width: 100%;          /* ocupa toda a largura do card */
+    height: 240px;        /* altura fixa: todas as fotos ficam do mesmo tamanho */
+    object-fit: cover;    /*faz a imagem preencher o espaço, cortando o que não couber*/
+    object-position: top; /*faz a imagem se posicionar no topo, caso seja cortada*/
+}
+
+/* A parte de baixo do card, com os textos */
+.card-personagem-corpo{
+    padding: 20px;          /* espaço interno: o texto não cola na borda do card */
+    display: flex;          /* liga o modo flex para os textos */
+    flex-direction: column; /* textos um embaixo do outro */
+    gap: 8px;               /* 8px de distância entre cada texto */
+    flex-grow: 1;             /* faz o corpo crescer para ocupar o espaço disponível, empurrando o botão para baixo */
+}
+
+/* O cargo do personagem */
+.card-personagem-cargo{
+    margin: 0; /* remove a margem padrão do p */
+    font-family: var(--fonte-rotulo); /* fonte do cargo */
+    font-size: 13px; /* tamanho da fonte */
+    letter-spacing: 0.06em; /* espaçamento entre letras */
+    text-transform: uppercase; /* deixa todas as letras maiúsculas */
+    color: var(--mostarda-texto); /* cor do texto */
+}
+
+/* O nome do personagem */
+.card-personagem-nome{
+    margin: 0; /* remove a margem padrão do h3 */
+    font-size: 22px; /* tamanho da fonte */
+    font-family: var(--fonte-titulo); /* fonte do nome */
+    letter-spacing: 0.02em; /* espaçamento entre letras */
+}
+
+/* A descrição do personagem */
+.card-personagem-descricao{
+    margin: 0; /* remove a margem padrão do p */
+    font-size: 15px; /* tamanho da fonte */
+    line-height: 1.55; /* altura da linha */
+    color: var(--cinza); /* cor do texto */
+    flex-grow: 1; /* faz a descrição crescer para ocupar o espaço disponível, empurrando o botão para baixo */
+}
+
+.card-personagem-botao{
+    padding: 10px 16px; /* espaço interno: 10px em cima e embaixo, 16px nas laterais */
+    border: 1.5px solid var(--mostarda); /* linha em volta: espessura, tipo (contínua) e cor */
+    border-radius: 4px; /* arredonda os cantos */
+    margin-top: 8px; /* distância do botão para o texto de cima */
+    font-size: 14px; /* tamanho da fonte */
+    font-weight: 600;
+    color: var(--mostarda); /* cor do texto */
+    text-decoration: none; /* remove o sublinhado do link */
+    align-self: flex-start; /* alinha o botão à esquerda, mesmo que o card seja maior */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card-personagem-botao:hover{
+    background: var(--mostarda); /* cor de fundo ao passar o mouse */
+    color: var(--papel); /* cor do texto ao passar o mouse */
+}

@@ -1,0 +1,31 @@
+.personagens {
+    background: white;
+    border-top: 1px solid var(--borda);
+    border-bottom: 1px solid var(--borda);
+}
+
+.personagens-container{
+    max-width: 1160px;
+    margin: 0 auto; /* zero em cima e em baixo e automático nas laterais*/
+    padding: 88px 24px;
+}
+
+.personagens-subtitulo{
+    font-family: var(--fonte-rotulo);
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    color: var(--mostarda-texto);
+    margin: 0;
+}
+
+.personagens-titulo{
+    font-family: var(--fonte-titulo);
+    font-size: 44px;
+    margin: 12px 0 40px;
+}
+
+.personagens-lista{
+    display: flex; /*por padrão, as divs ficam uma embaixo da outra. O flex coloca os filhos em linha*/
+    flex-wrap: wrap; /*Quando não cabe, descer para a linha de baixo*/
+    gap: 24px;
+}
