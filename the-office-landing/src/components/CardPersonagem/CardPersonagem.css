@@ -59,18 +59,18 @@
 
 .card-personagem-botao{
     padding: 10px 16px; /* espaço interno: 10px em cima e embaixo, 16px nas laterais */
-    border: 1.5px solid var(--mostarda); /* linha em volta: espessura, tipo (contínua) e cor */
+    border: 1.5px solid var(--tinta); /* linha em volta: espessura, tipo (contínua) e cor */
     border-radius: 4px; /* arredonda os cantos */
     margin-top: 8px; /* distância do botão para o texto de cima */
     font-size: 14px; /* tamanho da fonte */
     font-weight: 600;
-    color: var(--mostarda); /* cor do texto */
+    color: var(--tinta); /* cor do texto */
     text-decoration: none; /* remove o sublinhado do link */
     align-self: flex-start; /* alinha o botão à esquerda, mesmo que o card seja maior */
     transition: background 0.3s ease, color 0.3s ease;
 }
 
 .card-personagem-botao:hover{
-    background: var(--mostarda); /* cor de fundo ao passar o mouse */
+    background: var(--tinta); /* cor de fundo ao passar o mouse */
     color: var(--papel); /* cor do texto ao passar o mouse */
 }
